@@ -1,7 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Horizontally Centered Page with Links</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", Arial, serif;
+      text-align: center; /* center inline content horizontally */
+      background-color: #FFEEFE;
+      color: #2A37BC;
+    }
+
+    nav {
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+  margin: 0 15px;
+  text-decoration: underline; /* only underline */
+  color: #2A37BC;
+  background: none; /* no background */
+  font-weight: normal; /* remove bold if you want simpler */
+}
+
+nav a:hover {
+  color: #D039C7; /* optional: keep hover color */
+  text-decoration: underline; /* keep underline on hover */
+  background: none;
+}
+  </style>
+</head>
 <body>
-<h1>hello world</h1>
-<p>i’m new here</p>
+
+  <nav>
+    <a href="#about">about</a>
+    <a href="#poetry">poetry</a>
+    <a href="#contact">contact</a>
+  </nav>
+
+  <main>
+    <h2>a person is a funny thing</h2>
+    <p>(did i just call myself funny? oops)</p>
+  </main>
+
 </body>
 </html>
