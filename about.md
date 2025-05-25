@@ -3,6 +3,5 @@ layout: default
 title: about
 ---
 
-# hi
-
-test
+hi my name is Lola!
+i'm a poet from the low lands
