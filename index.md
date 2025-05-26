@@ -1,6 +1,6 @@
 ---
 layout: default
-title: home
+title: 🧸 home
 ---
 
 hi, my name is Lola!
