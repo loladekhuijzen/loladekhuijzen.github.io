@@ -3,6 +3,8 @@ layout: default
 title: poetry
 ---
 
-roses are red
+Soon, this page will contain a list of my poems.
 
-(more will follow soon)
+In the meantime, I'll leave you with one of my personal favorites — a poem by Rainer Maria Rilke.
+
+[Let This Darkness Be a Bell Tower](https://onbeing.org/poetry/let-this-darkness-be-a-bell-tower/)

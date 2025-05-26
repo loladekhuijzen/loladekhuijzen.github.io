@@ -3,4 +3,6 @@ layout: default
 title: home
 ---
 
-you have arrived
+hi, my name is Lola!
+
+I'm a poet from the low lands.
