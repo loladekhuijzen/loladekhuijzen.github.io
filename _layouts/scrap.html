@@ -6,55 +6,74 @@ layout: default
 @import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
   
 
+:root {
+  --columns: 12;
+  --cell-size: calc(100vw / var(--columns));
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-  max-width: 90vw;
-  margin: 0 auto;
-  /* Use fixed aspect ratio trick instead of auto-rows */
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-auto-rows: var(--cell-size);
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
   position: relative;
+  gap: 0;
 }
 
-.grid::before {
-  content: "";
-  display: block;
-  padding-top: calc(100% / 12 * var(--rows, 12)); /* maintains square grid cells */
-  grid-column: 1 / -1;
-}
-
-.grid > * {
-  position: absolute;
-}
-
+/* Position each figure or caption */
 .fig--1 {
-  grid-column: 1 / span 5;  /* start at col 1, span 5 columns */
-  grid-row: 1 / span 3;     /* start at row 1, span 3 rows */
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
 }
-
 .fig--2 {
-  grid-column: 6 / span 4;  /* start at col 6, span 4 columns */
-  grid-row: 1 / span 2;     /* start at row 1, span 2 rows */
+  grid-column: 5 / span 5;
+  grid-row: 3 / span 4;
 }
-
 .fig--3 {
-  grid-column: 6 / span 5;
-  grid-row: 3 / span 3;
+  grid-column: 3 / span 4;
+  grid-row: 7 / span 4;
 }
-
-p:nth-of-type(1) {
-  grid-column: 2 / span 5;
-  grid-row: 4 / span 1;
-}
-
-p:nth-of-type(2) {
-  grid-column: 1 / span 6;
+.caption--1 {
+  grid-column: 1 / span 4;
   grid-row: 5 / span 1;
 }
+.caption--2 {
+  grid-column: 5 / span 5;
+  grid-row: 7 / span 1;
+}
+.caption--3 {
+  grid-column: 3 / span 4;
+  grid-row: 11 / span 1;
+}
 
-p:nth-of-type(3) {
-  grid-column: 7 / span 5;
-  grid-row: 6 / span 1;
+/* Image styling */
+figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Aspect ratio (optional if not fixed by cell spans) */
+[style*="--aspect-ratio"] {
+  position: relative;
+}
+[style*="--aspect-ratio"]::before {
+  content: "";
+  display: block;
+  padding-bottom: calc(100% / (var(--aspect-ratio)));
+}
+[style*="--aspect-ratio"] > :first-child {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
 }
 
 </style>
