@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html>
-<div class="grid">
+---
+layout: default
+---
+
 <style>
 @import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
   
@@ -172,20 +173,8 @@ p {
 } 
 
 </style>
-<body>
-    <nav>
-      <a href="/">home</a>
-      <a href="/poetry">poetry</a>
-      <a href="/scrapbook">scrapbook</a>
-    </nav>
 
-  <!-- {% if page.icon %}
-    <img src="{{ page.icon }}" alt="Icon" class="icon" />
-  {% endif %} -->
 
-    {{ content }}
-
-</body>
+<div class="grid">
+  {{ content }}
 </div>
-</html>
-

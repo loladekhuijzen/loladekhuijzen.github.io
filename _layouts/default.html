@@ -53,10 +53,14 @@
       <a href="/scrapbook">scrapbook</a>
     </nav>
 
-    <header>
+    {% unless page.no_header %}
+      <header>
         <h1>🧸</h1>
         <!-- <h2>a person is a funny thing</h2> -->
-    </header>
+      </header>
+    {% endunless %}
+
+    
 
   <!-- {% if page.icon %}
     <img src="{{ page.icon }}" alt="Icon" class="icon" />
