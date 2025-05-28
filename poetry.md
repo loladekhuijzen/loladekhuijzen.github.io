@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 🧸 poetry
+title: poetry
 ---
 
 Soon, this page will contain a list of my poems.
