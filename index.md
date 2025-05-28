@@ -10,6 +10,6 @@ title: home
     <p>To me, writing is healing. It's also falling in love again, with life itself, amongst infinitely many other things.</p>
   </div>
   <div class="image-block">
-    <img src="kiss.jpeg" alt="A description of the photo">
+    <img src="images/me.jpeg" alt="A description of the photo">
   </div>
 </div>
