@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr); /* 16-column layout */
+  grid-auto-rows: auto;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.text-block {
+  grid-column: 3 / span 6;      /* Slightly left of center */
+  text-align: left;             /* Ensures left-aligned text inside */
+  align-self: center;
+}
+
+.image-block {
+  grid-column: 10 / span 5;     /* More to the right */
+  align-self: center;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
