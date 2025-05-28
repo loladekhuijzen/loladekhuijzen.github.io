@@ -3,49 +3,33 @@ layout: default
 ---
 
 <style>
-body {
+/* body {
     text-align: left;
+} */
+.image-block, .text-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 1%;
 }
 
-.container {
-  display: flex;
-  flex-direction: row; /* Image on the right */
-  align-items: flex-start; /* Text aligned to top */
-  gap: 1rem; /* space between text and image */
+.image-block img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.image-block {
-  order: 2; /* image second */
-  width: 40%; /* or whatever size you want */
-}
-
-.text-block {
-  order: 1; /* text first */
-  width: 60%;
-  text-align: left;
-}
-
-/* On narrow screens, stack vertically with image on top */
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
+/* Stack on small screens */
+@media (max-width: 768px) {
+  .image-block, .text-block {
+    display: block;
+    width: 100%;
+    margin: 0 0 1rem 0;
   }
+
   .image-block {
-    order: 1; /* image first */
-    width: 100%;
+    order: -1; /* Not necessary here, but harmless */
   }
-  .text-block {
-    order: 2; /* text second */
-    width: 100%;
-  }
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr); /* 16-column layout */
-  grid-auto-rows: auto;
-  gap: 1rem;
-  padding: 2rem;
 }
 
 
