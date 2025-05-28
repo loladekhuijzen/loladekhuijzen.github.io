@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: poetry
 title: poetry
 ---
 

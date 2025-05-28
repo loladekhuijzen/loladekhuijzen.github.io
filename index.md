@@ -5,7 +5,7 @@ title: home
 
 <div class="flex-layout">
   <div class="image-block">
-    <img src="images/kiss.jpeg" alt="A description of the photo">
+    <img src="images/me.jpeg" alt="A description of the photo">
   </div>
   <div class="text-block">
     <p>hi, my name is Lola!</p>
