@@ -3,6 +3,43 @@ layout: default
 ---
 
 <style>
+body {
+    text-align: left;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* Image on the right */
+  align-items: flex-start; /* Text aligned to top */
+  gap: 1rem; /* space between text and image */
+}
+
+.image-block {
+  order: 2; /* image second */
+  width: 40%; /* or whatever size you want */
+}
+
+.text-block {
+  order: 1; /* text first */
+  width: 60%;
+  text-align: left;
+}
+
+/* On narrow screens, stack vertically with image on top */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .image-block {
+    order: 1; /* image first */
+    width: 100%;
+  }
+  .text-block {
+    order: 2; /* text second */
+    width: 100%;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(16, 1fr); /* 16-column layout */
@@ -11,22 +48,7 @@ layout: default
   padding: 2rem;
 }
 
-.text-block {
-  grid-column: 3 / span 6;      /* Slightly left of center */
-  text-align: left;             /* Ensures left-aligned text inside */
-  align-self: center;
-}
 
-.image-block {
-  grid-column: 10 / span 5;     /* More to the right */
-  align-self: center;
-}
-
-.image-block img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 </style>
 
 {{ content }}
