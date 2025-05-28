@@ -3,14 +3,21 @@ layout: default
 ---
 
 <style>
-/* body {
+body {
     text-align: left;
-} */
+}
+
+.flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
 .image-block, .text-block {
-  display: inline-block;
-  vertical-align: top;
-  width: 48%;
-  margin: 1%;
+  flex: 1 1 40%;
+  max-width: 45%;
 }
 
 .image-block img {
@@ -22,13 +29,8 @@ layout: default
 /* Stack on small screens */
 @media (max-width: 768px) {
   .image-block, .text-block {
-    display: block;
-    width: 100%;
-    margin: 0 0 1rem 0;
-  }
-
-  .image-block {
-    order: -1; /* Not necessary here, but harmless */
+    max-width: 100%;
+    flex: 1 1 100%;
   }
 }
 
