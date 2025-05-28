@@ -10,6 +10,8 @@ title: home
   <div class="text-block">
     <p>hi, my name is Lola!</p>
     <p>I'm a poet from the low lands.</p>
-    <p>To me, writing is healing. It's also falling in love again. With life itself, amongst infinitely many other things.</p>
+    <p>To me, writing is healing. It's also falling in love again, with life itself.</p>
+    <p></p>
+    <p>"One does not become enlightened by imagining figures of light, but making the darkness conscious." -- C.G. Jung</p>
   </div>
 </div>
