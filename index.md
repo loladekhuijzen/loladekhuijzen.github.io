@@ -11,6 +11,5 @@ title: home
     <p>hi, my name is Lola! I'm a poet from Amsterdam.</p>
     <p>To me, writing is healing. It's also falling in love again, with life itself.</p>
     <p>"One does not become enlightened by imagining figures of light, but making the darkness conscious." — C.G. Jung</p>
-    <p><em>(three minutes in and she's already quoting Jung... run!)</em></p>
   </div>
 </div>
